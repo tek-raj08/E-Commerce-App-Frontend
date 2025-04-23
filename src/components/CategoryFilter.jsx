@@ -3,7 +3,7 @@ import useFetch from "../useFetch";
 import { Link } from "react-router-dom";
 
 function CategoryFilter() {
-  const { data } = useFetch("http://localhost:3000/categories");
+  const { data } = useFetch("https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/categories");
 
   console.log(data);
   return (
