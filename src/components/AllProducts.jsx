@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useAlert } from "../Context/AlertContext";
 
 function AllProducts({search}) {
-  const { data, loading, error } = useFetch("http://localhost:3000/products");
+  const { data, loading, error } = useFetch("https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/products");
 
   console.log(data);
 
