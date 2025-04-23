@@ -22,11 +22,11 @@ function ProductDetails() {
   const [search, setSearch] = useState("");
   const { productId } = useParams();
   const { data, loading, error } = useFetch(
-    `http://localhost:3000/products/${productId}`
+    `https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/products/${productId}`
   );
-  const { data: allProducts } = useFetch("http://localhost:3000/products");
+  const { data: allProducts } = useFetch("https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/products");
   console.log("f AllP", allProducts);
-  const { data: allCategories } = useFetch("http://localhost:3000/categories");
+  const { data: allCategories } = useFetch("https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/categories");
   console.log("f cate", allCategories);
 
   if (loading) {
