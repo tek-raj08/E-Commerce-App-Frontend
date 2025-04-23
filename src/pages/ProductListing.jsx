@@ -12,8 +12,8 @@ function ProductListing() {
     data: productData,
     loading,
     error,
-  } = useFetch(`http://localhost:3000/products/productCategoryId/${id}`);
-  const { data: categoryData } = useFetch("http://localhost:3000/categories");
+  } = useFetch(`https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/products/productCategoryId/${id}`);
+  const { data: categoryData } = useFetch("https://e-commerce-backend-git-main-tek-rajs-projects.vercel.app/categories");
   console.log("from productListing page: ", productData);
 
   const [filters, setFilters] = useState({
